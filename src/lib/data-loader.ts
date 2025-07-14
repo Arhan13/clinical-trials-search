@@ -58,17 +58,6 @@ function generateSearchVariations(term: string): string[] {
     variations.add(words.join(""));
   }
 
-  // Add common medical term variations
-  const medicalVariations = normalized
-    .replace(/\bcancer\b/g, "carcinoma")
-    .replace(/\bcarcinoma\b/g, "cancer")
-    .replace(/\blung\b/g, "pulmonary")
-    .replace(/\bpulmonary\b/g, "lung");
-
-  if (medicalVariations !== normalized) {
-    variations.add(medicalVariations);
-  }
-
   return Array.from(variations);
 }
 
