@@ -72,7 +72,7 @@ src/
 └── types/           # TypeScript type definitions
 ```
 
-## 🔍 Search Capabilities
+## 🔍 Search & Filter Capabilities
 
 ### Multi-field Search
 
@@ -83,6 +83,26 @@ Searches across all relevant fields:
 - Conditions and keywords
 - Sponsor names
 - Intervention names and descriptions
+
+### Comprehensive Filtering
+
+**Multi-select Filters (Checkboxes):**
+
+- **Phase**: Phase 1, Phase 2, Phase 3, Phase 4, Early Phase 1
+- **Status**: Recruiting, Active Not Recruiting, Completed, Terminated, etc.
+- **Study Type**: Interventional, Observational
+
+**Text-based Filters (Fuzzy Matching):**
+
+- **Sponsor**: Search pharmaceutical companies and organizations
+- **Condition**: Search medical conditions and diseases
+- **Intervention**: Search drugs, treatments, and therapies
+
+### Combined Search Logic
+
+- All filters work together with **AND logic**
+- Search query combines with active filters
+- Real-time results update as you type or select filters
 
 ## 🛠️ Development
 
